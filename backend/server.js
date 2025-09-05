@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
   res.send('Hello from Express with import! wohoo');
 });
 
+app.get("/data",(req,res) => {
+  res.send('data dhang se aa raha hai')
+})
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
